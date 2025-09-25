@@ -7,7 +7,7 @@ export default function Stories() {
         </h2>
         <p className="text-lg text-gray-600">
           Behind every recovery, relentless dedication. We are honored to be
-          part of each patient's story, helping them regain the strength,
+          part of each patient&apos;s story, helping them regain the strength,
           balance, and confidence to live more independently in the comfort of
           their own home.
         </p>
