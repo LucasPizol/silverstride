@@ -9,15 +9,15 @@ const montserrat = Montserrat({
 
 export const metadata: Metadata = {
   title:
-    "SilverStride Physical Therapy Center LLC - Fisioterapia Especializada para Idosos",
+    "SilverStride Physical Therapy Center LLC - Specialized Physical Therapy for Seniors",
   description:
-    "Fisioterapia especializada e compassiva para adultos mais velhos. Ajudamos você a manter independência, força e dignidade no processo de envelhecimento.",
+    "Specialized and compassionate physical therapy for older adults. We help you maintain independence, strength and dignity in the aging process.",
   keywords:
-    "fisioterapia, geriatria, idosos, reabilitação, prevenção de quedas, terapia manual",
+    "physical therapy, geriatrics, seniors, rehabilitation, fall prevention, manual therapy",
   authors: [{ name: "SilverStride Physical Therapy Center LLC" }],
   openGraph: {
     title: "SilverStride Physical Therapy Center LLC",
-    description: "Fisioterapia especializada para adultos mais velhos",
+    description: "Specialized physical therapy for older adults",
     type: "website",
   },
 };
@@ -28,7 +28,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt-BR" className="scroll-smooth">
+    <html lang="en" className="scroll-smooth">
       <body className={`antialiased ${montserrat.className}`}>{children}</body>
     </html>
   );
