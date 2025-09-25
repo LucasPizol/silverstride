@@ -120,7 +120,7 @@ export default function Services() {
           </p>
         </div>
         <div className="bg-gray-200">
-          <div className="container-custom grid md:grid-cols-2 lg:grid-cols-2 ">
+          <div className="container-custom grid md:grid-cols-2 lg:grid-cols-2 services-card-wrapper">
             <ServicesCard service={services[0]} />
 
             <div className="flex items-center justify-center">

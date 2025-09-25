@@ -30,9 +30,9 @@ export default function Hero() {
       <div className="floating-shape floating-shape-2"></div>
 
       <div className="container-custom relative z-10">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="grid lg:grid-cols-2 gap-12 items-center w-full grid-hero-section">
           <div className="space-y-8 animate-slide-in-left">
-            <div className="space-y-4">
+            <div className="space-y-4 grid-hero-section-content">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary-900 leading-tight">
                 Walk Stronger,{" "}
                 <span className="text-primary-600 relative">
@@ -47,7 +47,7 @@ export default function Hero() {
             </div>
 
             {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex flex-col sm:flex-row gap-4 grid-hero-section-cta">
               <a href="#contact" className="btn btn-primary text-lg px-8 py-4">
                 <svg
                   className="w-5 h-5 mr-2"
@@ -86,8 +86,8 @@ export default function Hero() {
             </div>
           </div>
 
-          <div className="animate-slide-in-right">
-            <div className="relative fisio-card-container">
+          <div className="animate-slide-in-right fisio-card-container-wrapper">
+            <div className="relative fisio-card-container flex justify-end">
               <div
                 style={{
                   position: "relative",
@@ -103,9 +103,9 @@ export default function Hero() {
                     position: "absolute",
                     left: "50%",
                     top: 0,
-                    transform: "translate(-50%, -70%)",
+                    transform: "translate(-50%, -73%)",
                     objectFit: "contain",
-                    maxHeight: "350px",
+                    maxHeight: "380px",
                   }}
                 />
 
@@ -119,7 +119,7 @@ export default function Hero() {
                     </p>
                   </div>
 
-                  <div className="space-y-3 text-sm text-black">
+                  <div className="space-y-3 text-sm text-black fisio-card-content">
                     <div className="flex items-center justify-center space-x-2">
                       <svg
                         className="w-4 h-4 text-primary-500"
