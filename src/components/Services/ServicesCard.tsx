@@ -14,7 +14,7 @@ export default function ServicesCard({ service }: { service: Service }) {
       <div className="space-y-3 mb-6">
         {service.benefits.map((benefit, benefitIndex) => (
           <div key={benefitIndex} className="flex items-center space-x-3">
-            <div className="w-5 h-5 bg-white rounded-full flex items-center justify-center flex-shrink-0">
+            <div className="w-5 h-5 bg-default rounded-full flex items-center justify-center flex-shrink-0">
               <svg
                 className="w-3 h-3 text-primary-600"
                 fill="currentColor"

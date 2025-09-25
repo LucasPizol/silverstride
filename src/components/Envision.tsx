@@ -2,18 +2,14 @@ export default function Envision() {
   return (
     <section
       id="envision"
-      className="section-padding bg-primary-400"
+      className="bg-primary-400"
       style={{
         paddingBottom: "0",
+        marginTop: "3rem",
       }}
     >
-      <div
-        className="flex gap-12"
-        style={{
-          maxWidth: "100rem",
-        }}
-      >
-        <div className="flex flex-col gap-6 items-start justify-center">
+      <div className="flex gap-12 envision-container">
+        <div className="flex flex-col gap-6 items-start justify-center container-custom">
           <h2 className="text-3xl md:text-4xl font-bold text-white">
             How do you envision a healthy lifespan?
           </h2>
@@ -46,7 +42,7 @@ export default function Envision() {
         <img
           src="/img-envision-section.png"
           alt="Envision"
-          className="w-full h-full object-cover object-center"
+          className="h-full object-cover object-center"
         />
       </div>
     </section>

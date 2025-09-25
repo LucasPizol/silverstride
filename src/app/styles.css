@@ -80,7 +80,7 @@ a {
   --primary-200: #b7c7b4;
   --primary-300: #adc2aa;
   --primary-400: #91a98e;
-  --primary-500: #91a98e;
+  --primary-500: #6f836c;
   --primary-600: #91a98e;
   --primary-700: #91a98e;
   --primary-800: #91a98e;
@@ -194,6 +194,9 @@ a {
 }
 
 /* Background colors */
+.bg-default {
+  background-color: #f9f3f3;
+}
 .bg-white {
   background-color: #ffffff;
 }
@@ -213,11 +216,17 @@ a {
 .bg-primary-400 {
   background-color: var(--primary-400);
 }
+.bg-primary-500 {
+  background-color: var(--primary-500);
+}
 .bg-primary-600 {
   background-color: var(--primary-600);
 }
 .bg-primary-700 {
   background-color: var(--primary-700);
+}
+.bg-primary-200 {
+  background-color: var(--primary-200);
 }
 
 .bg-gray-50 {
@@ -976,21 +985,39 @@ a {
 
 /* Container custom */
 .container-custom {
-  max-width: 90rem;
+  max-width: 85rem;
   margin-left: auto;
   margin-right: auto;
   padding-left: 1rem;
   padding-right: 1rem;
 }
 
-.services-card-wrapper{
+.services-card-wrapper {
   max-width: 70rem;
 }
 
-/* Section padding */
-.section-padding {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+.stories-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.envision-container {
+  max-width: 100rem;
+}
+
+.envision-container img {
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  max-width: 850px;
+  width: 100%;
+}
+
+@media (max-width: 1000px) {
+  .envision-container {
+    flex-direction: column;
+  }
 }
 
 /* Buttons */
@@ -1158,8 +1185,8 @@ a {
     flex-direction: row;
   }
   .container-custom {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }
 
@@ -1201,10 +1228,6 @@ a {
   .md\:p-12 {
     padding: 3rem;
   }
-  .section-padding {
-    padding-top: 6rem;
-    padding-bottom: 6rem;
-  }
 }
 
 @media (min-width: 1024px) {
@@ -1229,8 +1252,8 @@ a {
     line-height: 1;
   }
   .container-custom {
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
 }
 
@@ -1270,13 +1293,13 @@ textarea::placeholder {
 }
 
 /* Specific backgrounds with alpha */
-.bg-white\/95 {
+.bg-default\/95 {
   background-color: rgb(255 255 255 / 0.95);
 }
-.bg-white\/10 {
+.bg-default\/10 {
   background-color: rgb(255 255 255 / 0.1);
 }
-.bg-white\/20 {
+.bg-default\/20 {
   background-color: rgb(255 255 255 / 0.2);
 }
 
