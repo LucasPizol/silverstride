@@ -1,3 +1,4 @@
+import Image from "next/image";
 import ServicesCard from "./Services/ServicesCard";
 
 export default function Services() {
@@ -111,7 +112,7 @@ export default function Services() {
   return (
     <section id="services" className="section-padding">
       <div>
-        <div className="text-center max-w-3xl mx-auto mb-16  w-full">
+        <div className="text-center max-w-3xl mx-auto mb-16  w-full px-4">
           <h2 className="text-3xl md:text-4xl font-bold text-primary-400 mb-4">
             Our Services
           </h2>
@@ -120,40 +121,56 @@ export default function Services() {
           </p>
         </div>
         <div className="bg-gray-200">
-          <div className="container-custom grid md:grid-cols-2 lg:grid-cols-2 services-card-wrapper">
-            <ServicesCard service={services[0]} />
+          <div className="container-custom services-card-wrapper px-0">
+            <div className="services-row">
+              <ServicesCard service={services[0]} />
+              <div className="flex items-center justify-center">
+                <Image
+                  src="/our-services/01.png"
+                  alt="Fisioterapeuta especializada"
+                  className="object-contain object-center w-auto"
+                  width={450}
+                  height={300}
+                />
+              </div>
+            </div>
+            <div className="services-row">
+              <div className="flex items-center justify-center">
+                <Image
+                  src="/our-services/02.png"
+                  alt="Fisioterapeuta especializada"
+                  className="object-cover object-center w-full h-full"
+                  width={500}
+                  height={500}
+                />
+              </div>
+              <ServicesCard service={services[1]} />
+            </div>
+            <div className="services-row">
+              <ServicesCard service={services[2]} />
+              <div className="flex items-center justify-center">
+                <Image
+                  src="/our-services/03.png"
+                  alt="Fisioterapeuta especializada"
+                  className="object-cover object-center w-full h-full"
+                  width={500}
+                  height={500}
+                />
+              </div>
+            </div>
 
-            <div className="flex items-center justify-center">
-              <img
-                src="/our-services/01.png"
-                alt="Fisioterapeuta especializada"
-                className="object-contain object-center"
-              />
+            <div className="services-row">
+              <div className="flex items-center justify-center">
+                <Image
+                  src="/our-services/04.png"
+                  alt="Fisioterapeuta especializada"
+                  className="object-cover object-center w-full h-full"
+                  width={500}
+                  height={500}
+                />
+              </div>
+              <ServicesCard service={services[3]} />
             </div>
-            <div className="flex items-center justify-center">
-              <img
-                src="/our-services/02.png"
-                alt="Fisioterapeuta especializada"
-                className="object-contain object-center w-full"
-              />
-            </div>
-            <ServicesCard service={services[1]} />
-            <ServicesCard service={services[2]} />
-            <div className="flex items-center justify-center">
-              <img
-                src="/our-services/03.png"
-                alt="Fisioterapeuta especializada"
-                className="object-contain object-center w-full"
-              />
-            </div>
-            <div className="flex items-center justify-center">
-              <img
-                src="/our-services/04.png"
-                alt="Fisioterapeuta especializada"
-                className="object-contain object-center w-full"
-              />
-            </div>
-            <ServicesCard service={services[3]} />
           </div>
         </div>
       </div>

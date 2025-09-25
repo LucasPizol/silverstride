@@ -96,7 +96,7 @@ export default function Hero() {
                 }}
                 className="rounded-2xl shadow-2xl p-8 relative z-10 flex flex-col items-center inner-fisio-card-container"
               >
-                <img
+                <Image
                   src="/img-hero-section.png"
                   alt="Fisioterapeuta especializada"
                   style={{
@@ -107,6 +107,8 @@ export default function Hero() {
                     objectFit: "contain",
                     maxHeight: "380px",
                   }}
+                  width={400}
+                  height={400}
                 />
 
                 <div className="text-center space-y-6">

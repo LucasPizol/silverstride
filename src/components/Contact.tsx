@@ -54,8 +54,8 @@ export default function Contact() {
           <Image
             src="/img-contact-section.png"
             alt="Fisioterapeuta especializada"
-            width={500}
-            height={500}
+            width={1000}
+            height={1000}
             className="w-full h-full object-cover object-center"
           />
 

@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function PersonalizedCare() {
   return (
     <div className="mt-16 bg-white rounded-2xl shadow-lg p-8 md:p-12 relative container-custom w-full">
@@ -93,9 +95,11 @@ export default function PersonalizedCare() {
             Schedule an Assessment
           </a>
 
-          <img
+          <Image
             src="/img-personalized-care.png"
             alt="Fisioterapeuta especializada"
+            width={700}
+            height={700}
             className="img-personalized-care"
           />
         </div>
