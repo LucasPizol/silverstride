@@ -18,13 +18,13 @@ export default function Services() {
           />
         </svg>
       ),
-      title: "Fisioterapia Geriátrica",
+      title: "Therapeutic Exercise & Manual Therapy",
       description:
-        "Cuidado personalizado para adultos mais velhos, focado em restaurar e manter mobilidade, força e independência para melhorar a qualidade de vida geral.",
+        "Custom exercise plans paired with hands-on manual therapy to relieve pain, reduce stiffness, and increase joint flexibility.",
       benefits: [
-        "Avaliação completa da mobilidade",
-        "Planos de tratamento personalizados",
-        "Foco na independência funcional",
+        "Personalized exercises",
+        "Specialized manual therapy",
+        "Pain and stiffness relief",
       ],
       color: "from-blue-500 to-cyan-500",
     },
@@ -44,13 +44,13 @@ export default function Services() {
           />
         </svg>
       ),
-      title: "Prevenção de Quedas & Equilíbrio",
+      title: "Geriatric Physical Therapy",
       description:
-        "Avaliações completas e programas de exercícios individualizados para minimizar riscos de quedas, melhorar o equilíbrio e a estabilidade da marcha.",
+        "Personalized care for older adults, focused on restoring and maintaining mobility, strength, and independence to improve overall quality of life.",
       benefits: [
-        "Avaliação de riscos de queda",
-        "Treinamento de equilíbrio",
-        "Correção postural",
+        "Comprehensive mobility assessment",
+        "Personalized treatment plans",
+        "Focus on functional independence",
       ],
       color: "from-emerald-500 to-teal-500",
     },
@@ -70,13 +70,13 @@ export default function Services() {
           />
         </svg>
       ),
-      title: "Reabilitação Pós-Cirúrgica",
+      title: "Fall Prevention & Balance",
       description:
-        "Reabilitação estruturada para apoiar idosos a recuperar força e função após cirurgias, garantindo uma recuperação mais suave e segura.",
+        "Comprehensive assessments and individualized exercise programs to minimize fall risks, improve balance, and enhance walking stability.",
       benefits: [
-        "Recuperação pós-cirúrgica especializada",
-        "Fortalecimento gradual",
-        "Retorno seguro às atividades",
+        "Fall risk assessment",
+        "Balance training",
+        "Postural correction",
       ],
       color: "from-purple-500 to-indigo-500",
     },
@@ -96,13 +96,13 @@ export default function Services() {
           />
         </svg>
       ),
-      title: "Exercícios Terapêuticos & Terapia Manual",
+      title: "Post-Surgical Rehabilitation",
       description:
-        "Planos de exercícios personalizados combinados com terapia manual prática para aliviar a dor, reduzir rigidez e aumentar a flexibilidade articular.",
+        "Structured rehabilitation to help older adults regain strength and function after surgery, ensuring a smoother and safer recovery.",
       benefits: [
-        "Exercícios personalizados",
-        "Terapia manual especializada",
-        "Alívio da dor e rigidez",
+        "Specialized post-surgical recovery",
+        "Gradual strengthening",
+        "Safe return to activities",
       ],
       color: "from-orange-500 to-red-500",
     },
@@ -112,7 +112,7 @@ export default function Services() {
     <section id="services" className="section-padding">
       <div>
         <div className="text-center max-w-3xl mx-auto mb-16  w-full">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-primary-400 mb-4">
             Our Services
           </h2>
           <p className="text-lg text-gray-600">

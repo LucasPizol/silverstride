@@ -2,13 +2,13 @@ export default function PersonalizedCare() {
   return (
     <div className="mt-16 bg-white rounded-2xl shadow-lg p-8 md:p-12 relative container-custom w-full">
       <div className="text-center max-w-4xl mx-auto">
-        <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
-          Cuidado Personalizado para Cada Paciente
+        <h3 className="text-2xl md:text-3xl font-bold text-primary-400 mb-6">
+          Personalized Care for Each Patient
         </h3>
         <p className="text-lg text-gray-600 mb-8">
-          Todos os serviços são especialmente adaptados às necessidades de
-          idosos e incluem educação e suporte para cuidadores, garantindo
-          cuidado holístico e sustentado tanto em casa quanto na clínica.
+          All services are specially tailored to the needs of older adults and
+          include education and support for caregivers, ensuring holistic and
+          sustained care both at home and in the clinic.
         </p>
 
         <div className="grid md:grid-cols-3 gap-8 mb-8">
@@ -29,10 +29,10 @@ export default function PersonalizedCare() {
               </svg>
             </div>
             <h4 className="text-lg font-semibold text-gray-900 mb-2">
-              Atendimento Domiciliar
+              Home Care
             </h4>
             <p className="text-gray-600 text-sm">
-              Levamos nossos serviços até o conforto da sua casa
+              We bring our services to the comfort of your home
             </p>
           </div>
 
@@ -53,10 +53,10 @@ export default function PersonalizedCare() {
               </svg>
             </div>
             <h4 className="text-lg font-semibold text-gray-900 mb-2">
-              Suporte a Cuidadores
+              Caregiver Support
             </h4>
             <p className="text-gray-600 text-sm">
-              Educação e treinamento para familiares e cuidadores
+              Education and Training for Family Members and Caregivers
             </p>
           </div>
 
@@ -77,10 +77,10 @@ export default function PersonalizedCare() {
               </svg>
             </div>
             <h4 className="text-lg font-semibold text-gray-900 mb-2">
-              Monitoramento Contínuo
+              Continuous Monitoring
             </h4>
             <p className="text-gray-600 text-sm">
-              Acompanhamento regular do progresso e ajustes no tratamento
+              Regular Monitoring of Progress and Treatment Adjustments
             </p>
           </div>
         </div>
@@ -90,7 +90,7 @@ export default function PersonalizedCare() {
             href="#contact"
             className="btn btn-primary text-lg px-8 py-4 flex-1"
           >
-            Agende sua Avaliação Gratuita
+            Schedule an Assessment
           </a>
 
           <img

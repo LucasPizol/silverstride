@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Envision() {
   return (
     <section
@@ -13,13 +15,13 @@ export default function Envision() {
           <h2 className="text-3xl md:text-4xl font-bold text-white">
             How do you envision a healthy lifespan?
           </h2>
-          <p className="text-lg text-white">
-            Envisioning a healthy lifespan means aging with strength,
-            independence, and dignity. At SilverStride, we empower seniors to
-            move with confidence, prevent falls, recover safely after surgery,
-            and maintain overall well-being—supporting both patients and
-            caregivers so every stage of life can be lived with resilience and
-            hope.
+          <p className="text-lg text-white text-justify">
+            Envisioning a healthy lifespan means aging with{" "}
+            <b> strength, independence, and dignity</b>. At SilverStride, we
+            empower seniors to move with <b>confidence</b>, prevent falls,
+            recover safely after surgery, and maintain{" "}
+            <b>overall well-being—supporting</b> both patients and caregivers so
+            every stage of life can be lived with resilience and hope.
           </p>
           <a href="#services" className="btn btn-secondary text-lg px-8 py-4">
             <svg
@@ -39,10 +41,12 @@ export default function Envision() {
           </a>
         </div>
 
-        <img
+        <Image
           src="/img-envision-section.png"
           alt="Envision"
-          className="h-full object-cover object-center"
+          width={1200}
+          height={500}
+          className="h-full w-full object-cover object-center"
         />
       </div>
     </section>

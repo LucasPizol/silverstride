@@ -7,7 +7,7 @@ type Service = {
 export default function ServicesCard({ service }: { service: Service }) {
   return (
     <div className="bg-primary-400 p-8 md:p-8">
-      <h3 className="text-xl  font-bold text-white mb-1">{service.title}</h3>
+      <h3 className="text-2xl font-bold text-white mb-1">{service.title}</h3>
       <p className="text-white mb-6 leading-relaxed">
         {service.description}
       </p>

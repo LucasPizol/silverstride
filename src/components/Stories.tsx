@@ -1,8 +1,10 @@
+import Image from "next/image";
+
 export default function Stories() {
   return (
     <section id="services" className="section-padding w-full">
       <div className="text-center max-w-3xl mx-auto mb-16 w-full">
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+        <h2 className="text-3xl md:text-4xl font-bold text-primary-400 mb-4">
           Stories of Strength, Resilience and Recovery
         </h2>
         <p className="text-lg text-gray-600">
@@ -15,10 +17,12 @@ export default function Stories() {
       <div className="w-full flex items-center justify-center container-custom">
         <div className="grid gap-6 w-full stories-container">
           {Array.from({ length: 8 }).map((_, index) => (
-            <img
+            <Image
               key={`/stories/${index + 1}.webp`}
               src={`/stories/${index + 1}.webp`}
               alt="Fisioterapeuta especializada"
+              width={350}
+              height={300}
               className="h-full object-cover rounded-lg"
               style={{
                 maxHeight: "300px",

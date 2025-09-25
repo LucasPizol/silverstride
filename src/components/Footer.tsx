@@ -1,34 +1,32 @@
 import Link from "next/link";
 
 export default function Footer() {
-  const currentYear = new Date().getFullYear();
-
   const footerSections = [
     {
-      title: "Serviços",
+      title: "Services",
       links: [
-        { name: "Fisioterapia Geriátrica", href: "#services" },
-        { name: "Prevenção de Quedas", href: "#services" },
-        { name: "Reabilitação Pós-Cirúrgica", href: "#services" },
-        { name: "Terapia Manual", href: "#services" },
+        { name: "Geriatric Physical Therapy", href: "#services" },
+        { name: "Fall Prevention", href: "#services" },
+        { name: "Post-Surgical Rehabilitation", href: "#services" },
+        { name: "Therapeutic Exercises & Manual Therapy", href: "#services" },
       ],
     },
     {
-      title: "Empresa",
+      title: "Company",
       links: [
-        { name: "Sobre Nós", href: "#about" },
-        { name: "Nossa Missão", href: "#about" },
-        { name: "Contato", href: "#contact" },
-        { name: "Localização", href: "#contact" },
+        { name: "About Us", href: "#about" },
+        { name: "Our Mission", href: "#about" },
+        { name: "Contact", href: "#contact" },
+        { name: "Location", href: "#contact" },
       ],
     },
     {
-      title: "Suporte",
+      title: "Support",
       links: [
-        { name: "Agendamento", href: "#contact" },
-        { name: "Emergências", href: "tel:+15551234567" },
+        { name: "Appointment", href: "#contact" },
+        { name: "Emergencies", href: "tel:+15551234567" },
         { name: "FAQ", href: "#" },
-        { name: "Política de Privacidade", href: "#" },
+        { name: "Privacy Policy", href: "#" },
       ],
     },
   ];
@@ -89,9 +87,9 @@ export default function Footer() {
               <span className="text-xl font-bold">SilverStride</span>
             </Link>
             <p className="text-white mb-6 text-sm leading-relaxed">
-              Fisioterapia especializada para uma vida mais independente e digna
-              na terceira idade. Cuidado compassivo e profissional para adultos
-              mais velhos.
+              Specialized physical therapy for a more independent and dignified
+              life in older adulthood. Compassionate and professional care for
+              older adults.
             </p>
 
             {/* Social Links */}
