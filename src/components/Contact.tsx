@@ -58,7 +58,7 @@ export default function Contact() {
           <div className="bg-gray-50 rounded-2xl p-8">
             <h3 className="text-2xl font-bold text-gray-900">Send a Message</h3>
 
-            <form className="space-y-6" onSubmit={handleSubmit}>
+            <form className="space-y-6 mt-4" onSubmit={handleSubmit}>
               <div>
                 <label
                   htmlFor="name"
