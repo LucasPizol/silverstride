@@ -1,10 +1,41 @@
+"use client";
+
 import Image from "next/image";
+import { useState } from "react";
+import { MdSend } from "react-icons/md";
 
 export default function Contact() {
+  const [isLoading, setIsLoading] = useState(false);
+
+  const [error, setError] = useState<string>("");
+  const [success, setSuccess] = useState<string>("");
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    try {
+      e.preventDefault();
+      setIsLoading(true);
+
+      await fetch("/api/send-email", {
+        method: "POST",
+        body: new FormData(e.target as HTMLFormElement),
+      });
+
+      setIsLoading(false);
+      setSuccess("Email sent successfully");
+    } catch (error) {
+      setIsLoading(false);
+      setError("Failed to send email, please try again later.");
+    }
+
+    setTimeout(() => {
+      setSuccess("");
+      setError("");
+    }, 3000);
+  };
+
   return (
     <section id="contact" className="section-padding bg-default">
       <div className="container-custom">
-        {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-primary-400 mb-4">
             Get in Touch
@@ -27,7 +58,7 @@ export default function Contact() {
           <div className="bg-gray-50 rounded-2xl p-8">
             <h3 className="text-2xl font-bold text-gray-900">Send a Message</h3>
 
-            <form className="space-y-6" method="POST" action="/api/send-email">
+            <form className="space-y-6" onSubmit={handleSubmit}>
               <div>
                 <label
                   htmlFor="name"
@@ -121,23 +152,30 @@ export default function Contact() {
 
               <button
                 type="submit"
-                className="w-full btn btn-primary text-lg py-4"
+                className="w-full btn btn-primary text-lg py-4 flex gap-2 items-center justify-center"
+                disabled={isLoading}
+                style={{
+                  opacity: isLoading ? 0.5 : 1,
+                }}
               >
-                <svg
-                  className="w-5 h-5 mr-2"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"
-                  />
-                </svg>
-                Send Message
+                <MdSend />
+                {isLoading ? "Sending..." : "Send Message"}
               </button>
+
+              {error && (
+                <div className="border border-red-600 p-4 bg-red-50 rounded-lg">
+                  <p className="text-sm text-red-500 text-center text-red-600 font-bold">
+                    {error}
+                  </p>
+                </div>
+              )}
+              {success && (
+                <div className="border border-green-100 p-4 bg-green-50 rounded-lg">
+                  <p className="text-sm text-green-500 text-center text-green-600 font-bold">
+                    {success}
+                  </p>
+                </div>
+              )}
             </form>
 
             <p className="text-sm text-gray-500 mt-4 text-center">

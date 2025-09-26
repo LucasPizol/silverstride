@@ -1,64 +1,25 @@
 import Image from "next/image";
 import Envision from "./Envision";
+import { MdPeople } from "react-icons/md";
+import { FaHeart } from "react-icons/fa";
+import { IoShieldCheckmark } from "react-icons/io5";
 
 export default function About() {
   const features = [
     {
-      icon: (
-        <svg
-          className="w-8 h-8"
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 24 24"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth={2}
-            d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
-          />
-        </svg>
-      ),
+      icon: <FaHeart className="w-8 h-8 text-primary-600" />,
       title: "Our Mission",
       description:
         "At <b>Silverstride</b>, our mission is to restore <b>independence</b>, enhance <b>mobility</b>, and improve <b>quality of life</b> for older adults through <b>compassionate, evidence-based physical therapy</b>. We are dedicated to creating personalized rehabilitation programs that respect each patient’s <b>unique history, needs and goals</b>. With focus on <b>safety, dignity and empowerment</b>, we strive to help every individual age with strength, confidence and renewed vitality.",
     },
     {
-      icon: (
-        <svg
-          className="w-8 h-8"
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 24 24"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth={2}
-            d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.031 9-11.622 0-1.042-.133-2.052-.382-3.016z"
-          />
-        </svg>
-      ),
+      icon: <IoShieldCheckmark className="w-8 h-8 text-primary-600" />,
       title: "Specialized Experience",
       description:
         "Ms. Junqueira holds advanced training in Clinical Rehabilitation from Flinders University in Australia and in Geriatrics from Campinas State University in Brazil.",
     },
     {
-      icon: (
-        <svg
-          className="w-8 h-8"
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 24 24"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth={2}
-            d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m0 0h3m0 0h3m0 0a1 1 0 001-1V10M9 21v-6a1 1 0 011-1h2a1 1 0 011 1v6"
-          />
-        </svg>
-      ),
+      icon: <MdPeople className="w-8 h-8 text-primary-600" />,
       title: "Holistic Care",
       description:
         "Our approach includes education and support for formal and informal caregivers, ensuring sustained care both at home and in the clinic.",

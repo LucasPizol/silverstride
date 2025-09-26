@@ -105,8 +105,14 @@ a {
 
   /* Cores Green */
   --green-100: #dcfce7;
+  --green-50: #f0fdf4;
+  --green-100: #bbf7d0;
+  --green-200: #86efac;
   --green-500: #22c55e;
   --green-600: #16a34a;
+
+  --red-50: #d1b1b1;
+  --red-600: #a34f4f;
 }
 
 /* Cores de utilidade */
@@ -136,6 +142,29 @@ a {
 }
 .text-primary-900 {
   color: var(--primary-900);
+}
+
+.text-green-50 {
+  color: var(--green-50);
+}
+.text-green-100 {
+  color: var(--green-100);
+}
+.text-green-200 {
+  color: var(--green-200);
+}
+.text-green-500 {
+  color: var(--green-500);
+}
+.text-green-600 {
+  color: var(--green-600);
+}
+
+.text-red-50 {
+  color: var(--red-50);
+}
+.text-red-600 {
+  color: var(--red-600);
 }
 
 .text-gray-300 {
@@ -196,6 +225,15 @@ a {
 .text-white {
   color: #ffffff;
 }
+.text-green-50 {
+  color: var(--green-50);
+}
+.text-green-100 {
+  color: var(--green-100);
+}
+.text-green-200 {
+  color: var(--green-200);
+}
 .text-green-500 {
   color: var(--green-500);
 }
@@ -212,6 +250,28 @@ a {
 }
 .bg-transparent {
   background-color: transparent;
+}
+.bg-red-50 {
+  background-color: var(--red-50);
+}
+.bg-red-600 {
+  background-color: var(--red-600);
+}
+.bg-red-100 {
+  background-color: var(--red-100);
+}
+.bg-red-200 {
+  background-color: var(--red-200);
+}
+
+.bg-green-50 {
+  background-color: var(--green-50);
+}
+.bg-green-100 {
+  background-color: var(--green-100);
+}
+.bg-green-200 {
+  background-color: var(--green-200);
 }
 
 .bg-primary-50 {
@@ -536,6 +596,9 @@ a {
 .grid-cols-3 {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
+.gap-2 {
+  gap: 0.5rem;
+}
 .gap-3 {
   gap: 0.75rem;
 }
@@ -733,7 +796,7 @@ a {
 
 /* Border */
 .border {
-  border-width: 1px;
+  border-width: 1px solid;
 }
 .border-t {
   border-top-width: 1px;
@@ -752,6 +815,27 @@ a {
 }
 .border-primary-600 {
   border-color: var(--primary-600);
+}
+.border-green-50 {
+  border-color: var(--green-50);
+}
+.border-green-100 {
+  border: 1px solid var(--green-100);
+}
+.border-green-200 {
+  border-color: var(--green-200);
+}
+.border-green-500 {
+  border-color: var(--green-500);
+}
+.border-green-600 {
+  border-color: var(--green-600);
+}
+.border-red-50 {
+  border: 1px solid var(--red-50);
+}
+.border-red-600 {
+  border: 1px solid var(--red-600);
 }
 
 /* Border radius */

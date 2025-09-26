@@ -24,8 +24,8 @@ export async function POST(req: Request) {
   });
 
   if (!res.ok) {
-    return NextResponse.json({ error: "Erro ao enviar" }, { status: 500 });
+    return NextResponse.redirect(new URL("/?success=false", req.url));
   }
 
-  return NextResponse.json({ success: true });
+  return NextResponse.redirect(new URL("/?success=true", req.url));
 }
